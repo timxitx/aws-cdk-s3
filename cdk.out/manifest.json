@@ -1,0 +1,784 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsCdkS3Stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsCdkS3Stack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AwsCdkS3Stack/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:710:21)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1SubnetF6608456",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PublicSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableC46AB2F4",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PublicSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1RouteTableAssociation2ECEE1CB",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PublicSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1DefaultRoute95FDF9EB",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1031:19)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:757:46)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1EIP096967CB",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet1NATGatewayAD3400C1",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2Subnet492B6BFB",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PublicSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTable1DF17386",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PublicSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2RouteTableAssociation227DE78D",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PublicSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1153:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2DefaultRoute052936F6",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1031:19)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:757:46)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2EIP8CCBA239",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1161:21)",
+              "NatGatewayProvider.configureNat (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPublicSubnet2NATGateway91BFBEC9",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1159:17)",
+              "NatGatewayProvider.configureNat (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1Subnet5057CF7E",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PrivateSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTable8819E6E2",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PrivateSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1RouteTableAssociation56D38C7E",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PrivateSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet1DefaultRouteA8CDE2FA",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:133:12)",
+              "NatGatewayProvider.configureNat (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:126:12)",
+              "Vpc.createNatGateways (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2Subnet0040C983",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:997:20)",
+              "new PrivateSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableCEDCEECE",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1015:19)",
+              "new PrivateSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2RouteTableAssociation86A610DA",
+            "trace": [
+              "new Subnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1021:5)",
+              "new PrivateSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1185:5)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:887:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:864:28)",
+              "Vpc.createSubnets (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:859:12)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:739:10)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcPrivateSubnet2DefaultRoute9CE96294",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1063:19)",
+              "NatGatewayProvider.configureSubnet (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:133:12)",
+              "NatGatewayProvider.configureNat (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:126:12)",
+              "Vpc.createNatGateways (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:834:14)",
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:764:14)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:746:19)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:752:19)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/test-bucketdsadsadsad/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testbucketdsadsadsad076FD4D1",
+            "trace": [
+              "new Bucket (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:713:22)",
+              "new AwsCdkS3Stack (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/lib/aws-cdk-s3-stack.ts:19:5)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/bin/aws-cdk-s3.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/AwsCdkS3Stack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/tianxuxi/Documents/myProject/aws-cdk-s3/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AwsCdkS3Stack"
+    }
+  }
+}
